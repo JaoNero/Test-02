@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>684259054</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.7;
+}
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header h2{
+    color: rgb(3, 3, 151);
+}
+nav a {
+  color: gray;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(3, 3, 151);
+}
+
+
+.grid-main{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    
+}
+.grid-main{
+    grid-template-columns: repeat(2 ,1fr);
+}
+.hero{
+    margin: 0 3rem 0 0;
+}
+.hero p{
+    color: gray;
+    margin-bottom: 2rem;
+}
+.hero a{
+    margin-top: 2rem;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+}
+.hero a:hover{
+    background-color: rgb(5, 5, 129);
+}
+.grid-input{
+    grid-template-columns: repeat(2 ,1fr);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+.grid-input a{
+    margin-top: 2rem;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+}
+.grid-input a:hover{
+    background-color: rgb(5, 5, 129);
+}
+
+.grid-card{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.card-colum{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 1rem;
+}
+.card-1{
+    background-color: rgb(255, 213, 134);
+    border-radius: 16px;
+}
+.card-2{
+    background-color: rgb(132, 230, 255);
+    border-radius: 16px;
+}
+.card-3{
+    background-color: rgb(227, 155, 255);
+    border-radius: 16px;
+}
+.text-custom1{color: rgb(158, 76, 0);text-align: center;padding: 3rem;}
+.text-custom2{color: rgb(0, 17, 255);text-align: center;padding: 3rem;}
+.text-custom3{color: rgb(75, 4, 141);text-align: center;padding: 3rem;}
+
+.card-1 p{
+    color: gray;
+    background-color: white;
+    padding: 1.5rem 0 3rem 1rem;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.card-2 p{
+    color: gray;
+    background-color: white;
+    padding: 1.5rem 0 3rem 1rem;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.card-3 p{
+    color: gray;
+    background-color: white;
+    padding: 1.5rem 0 3rem 1rem;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+  background-color: black;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+@media (max-width: 900px){
+    .container{
+    margin: 0 auto;
+    }
+    .container a{
+    margin: 0 auto;
+    }
+    .grid-main{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .grid-card{
+    margin: 0 auto;
+    padding: 3rem 0;
+    }
+    .card-colum{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1rem;
+}
+}
+@media (max-width: 600px){
+    .container{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    }
+    nav a {
+        display: block;
+        text-underline-position: below;
+    }
+    
+    header {
+    background: white;
+    padding: 20px 0;
+}
+    .grid-main{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .grid-card{
+    margin: 0 auto;
+    padding: 3rem 0;
+    }
+    .card-colum{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+    footer{display: block;}
+    .grid-input a{
+        gap: 20;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="header">
+            <h2 class="header-title">SE054: Learning Hub</h2>
+        </div>
+        <nav>
+            <a href="#top">หน้าแรก</a>
+            <a href="#secorn">หลักสูตร</a>
+            <a href="#button">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+    <main class="grid-main">
+        <div class="hero" id="secorn">
+            <h1>เริ่มต้นสร้างเว็บไซต์<br>ในแบบของคุณ</h1>
+            <p>เรียนรู้การออกแบบและพัฒนาเว็บไซต์ผ่านการลงมือทำ พร้อมพัฒนาทักษะที่ใช้ต่อยอดในโครงงานของคุณ</p>
+            <a href="">ดูหลักสูตรทั้งหมด</a>
+        </div>
+        
+        <div class="grid-input">
+            <section class="text-columns">
+                <label for="filter-text"><i class=""></i>ชื่อ-นามสกุล</label>
+                <input type="text" id="FLname" name="FLname" class="filter-text">
+                <label for="filter-text"><i class=""></i>อีเมล</label>
+                <input type="email" id="FLname" name="FLname" class="filter-text">
+            </section>
+            
+
+            <section>
+                <input type="radio" id="filter-bird" name="catagory" class="filter-radio">
+                <label for="filter-all"><i class="fa-solid fa-house"></i>HTML</label>
+                <input type="radio" id="filter-fish" name="catagory" class="filter-radio">
+                <label for="filter-dog"><i class="fa-solid fa-dog"></i>Web</label>
+                <input type="radio" id="filter-small-pet" name="catagory" class="filter-radio">
+                <label for="filter-cat"><i class="fa-solid fa-cat"></i>HTML</label>
+            </section>
+                <a href="">ส่งข้อมูล</a>
+        </div>
+    </main>
+    <section class="grid-card">
+        <h2 id="button">หลักสูตรแนะนำ</h2>
+        <div class="card-colum">
+            <div class="card-1">
+                <h1 class="text-custom1">&lt;HTML&gt;</h1>
+                <p>HTML for Beginer</p>
+            </div>
+            <div class="card-2">
+                <h1 class="text-custom2">{CSS}</h1>
+                <p>Responsiv Web Design</p>
+            </div>
+            <div class="card-3">
+                <h1 class="text-custom3">UI / UX</h1>
+                <p>UI Design Essentials</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2026 SE054: Learning Hub</p>
+        <p>นราธิพย์ ทาพล</p>
+    </footer>
+    
+</body>
+</html>
